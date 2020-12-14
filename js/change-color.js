@@ -29,7 +29,6 @@ const randomIntegerFromInterval = (min, max) => {
       let index = randomIntegerFromInterval(0, 5)
       const currentColor = colors[index]
       refs.body.style.background = currentColor
-    console.log(currentColor, index)
     }, 1000);
 }
   
