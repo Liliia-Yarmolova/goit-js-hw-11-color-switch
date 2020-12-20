@@ -26,11 +26,11 @@ const randomIntegerFromInterval = (min, max) => {
     isActive = true;
 
   intervalId = setInterval(() => {
-      let index = randomIntegerFromInterval(0, 5)
+      let index = randomIntegerFromInterval(0, colors.length-1)
       const currentColor = colors[index]
       refs.body.style.background = currentColor
     }, 1000);
-}
+  }
   
 function stop() {
     clearInterval(intervalId);
